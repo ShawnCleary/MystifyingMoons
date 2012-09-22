@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mystifying Moons</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/moonresize.js" type="text/javascript"></script>
+<script src="js/jquery-1.4.2.min.js" type="text/javascript"></script>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<div id="starfield"></div>
+    <div id="title" style=" -moz-transition-duration: .5s; -moz-transition-timing-function: ease;  display: block;">
+    <h1>Mystifying Moons</h1>
+    </div>
+    <div id="instructions"></div>
+    <ul id="moons">
+    	<li id="Mimas" class="moon" style="-moz-transition-duration: .5s; -moz-transform: translateX(50%) translateY(150%) scale(.1) rotate(-20deg); -moz-transition-timing-function: ease;">
+            <div class="moonMask">
+            	<img src="Images/Mimas.png" alt>
+            </div>
+        </li>
+        <li id="Nereid" class="moon" style="-moz-transition-duration: .5s; -moz-transform: translateX(50%) translateY(150%) scale(.1) rotate(-20deg); -moz-transition-timing-function: ease;">
+        	<div class="moonMask">
+            	<img src="Images/Nereid.png" alt>
+            </div>
+        </li>
+        <li id="Miranda" class="moon" style="-moz-transition-duration: .5s; -moz-transform: translateX(50%) translateY(150%) scale(.1) rotate(-20deg); -moz-transition-timing-function: ease;">
+        	<div class="moonMask">
+            	<img src="Images/Miranda.png" alt>
+            </div>
+        </li>
+        <li id="Enceladus" class="moon" style="-moz-transition-duration: .5s; -moz-transform: translateX(50%) translateY(150%) scale(.1) rotate(-20deg); -moz-transition-timing-function: ease;">
+        	<div class="moonMask">
+            	<img src="Images/Enceladus.png" alt>
+            </div>
+        </li>
+        <li id="Triton" class="moon" style="-moz-transition-duration: .5s;  -moz-transform: translateX(50%) translateY(150%) scale(.1) rotate(-20deg); -moz-transition-timing-function: ease;">
+        	<div class="moonMask">
+            	<img src="Images/Triton.png" alt>
+            </div>
+        </li>
+        <li id="Europa" class="moon" style="-moz-transition-duration: .5s; -moz-transform: translateX(50%) translateY(150%) scale(.1) rotate(-20deg); -moz-transition-timing-function: ease;">
+        	<div class="moonMask">
+            	<img src="Images/Europa.png" alt>
+            </div>
+        </li>
+        <li id="Io" class="moon" style="-moz-transition-duration: .5s;  -moz-transform: translateX(50%) translateY(150%) scale(.1) rotate(-20deg); -moz-transition-timing-function: ease;">
+        	<div class="moonMask">
+            	<img src="Images/Io.png" alt>
+            </div>
+        </li>
+        <li id="Callisto" class="moon" style="-moz-transition-duration: .5s;  -moz-transform: translateX(50%) translateY(150%) scale(.1) rotate(-20deg); -moz-transition-timing-function: ease;">
+        	<div class="moonMask">
+            	<img src="Images/Callisto.png" alt>
+            </div>
+        </li>
+        <li id="Titan" class="moon" style="-moz-transition-duration: .5s; -moz-transform: translateX(50%) translateY(150%) scale(.1) rotate(-20deg); -moz-transition-timing-function: ease;">
+        	<div class="moonMask">
+            	<img src="Images/Titan.png" alt>
+            </div>
+        </li>
+        <li id="Ganymede" class="moon" style="-moz-transition-duration: 0.5s;  -moz-transform: translateX(50%) translateY(150%) scale(.1) rotate(-20deg); -moz-transition-timing-function: ease;">
+        	<div class="moonMask">
+            	<img src="Images/Ganymede.png" alt>
+            </div>
+        </li>
+    </ul>
+    <div id="UI">
+    	<div id="Left" style="display: none;">
+			<div id="Previous" style="top: 50%;">
+            	<p><<</p>
+            </div>
+        </div>
+        <div id="Right" style="display: none;">
+			<div id="Next" style="top: 50%;">
+            	<p>>></p>
+            </div>
+        </div>
+        <div id="Bottom" style="display: none;">
+			<div id="Back">
+            	<p>Back to space</p>
+            </div>
+        </div>      
+    	<div id="GanymedeInfoBox" class="InfoBox">
+			<div class="InfoBoxWrapper">
+            	<div class="AboutMoon">
+                <h1>GANYMEDE</h1><p>is the largest moon of Jupiter and the largest moon in the solar system. Ganymede is so big that has its own magnetic field.</p>
+                </div>
+                <div class="MoonFacts">
+                	<div class="MoonFactsLeft">
+                    <ul>
+                    	<li class="BlueText">
+                        <img src="Images/DiameterIcon.png" alt>
+                        <h3>5,267 KM</h3>
+                        <h5>EQUATOIAL DIAMETER</h5>
+                        </li>
+                        <li class="GreenText">
+                        <img src="Images/SurfaceAreaIcon.png" alt>
+                        <h3>87 x 10<span class="PowerNumber">6</span> KM<span class="PowerNumber" >2</span></h3>
+                        <h5>SURFACE AREA</h5>
+                        </li>
+                        <li class="RedText">
+                        <img src="Images/VolumeIcon.png" alt>
+                        <h3>7.6 x 10<span class="PowerNumber" >10</span> KM<span class="PowerNumber">3</span></h3>
+                        <h5>VOLUME</h5>
+                        </li>
+                        <li class="YellowText">
+                        <img src="Images/MassIcon.png" alt>
+                        <h3>1.48 x 10<span class="PowerNumber">23</span> KG</h3>
+                        <h5>MASS</h5>
+                        </li>
+                    </ul>
+                	</div>
+                    <div class="MoonFactsRight" >
+                    <ul class="RightAlign">
+                    <li>
+                    <img src="Images/GanymedeGrid.png" alt>
+                    </li>
+                    <li class="WhiteText">
+                        <img src="Images/EyeIcon.png" alt>
+                        <h3>41.3%</h3>
+                        <h5>THE SIZE OF EARTH</h5>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="TitanInfoBox" class="InfoBox" style=" -moz-transition-delay: .15s; -moz-transition-duration: 0.4s; -moz-transition-timing-function: ease;">
+			<div class="InfoBoxWrapper">
+            	<div class="AboutMoon">
+                <h1>TITAN</h1><p>is the largest moon of Saturn and has the densest atmosphere in the solar system. Titan’s atmosphere is more dense than Earth and could harbor life.</p>
+                </div>
+                <div class="MoonFacts">
+                	<div class="TitanMoonFactsRight">
+                    <ul>
+                    <li class="WhiteText">
+                    	<h4>THE ATMOSPHERE OF TITAN</h4>
+         			</li>
+                    <li>
+                    <img src="Images/GasPie.png" alt>
+                    </li>
+                    
+                    </ul>
+                	</div>
+                    <div class="TitanMoonFactsLeft" >
+                    <ul>
+                    	<li class="BlueText">
+                        <img src="Images/DiameterIcon.png" alt>
+                        <h3>5,149 KM</h3>
+                        <h5>EQUATOIAL DIAMETER</h5>
+                        </li>
+                        <li class="GreenText">
+                        <img src="Images/GreenDot.png" alt>
+                        <h3>98.4%</h3>
+                        <h5>NITROGEN</h5>
+                        </li>
+                        <li class="RedText">
+                        <img src="Images/RedDot.png" alt>
+                        <h3>1.4%</h3>
+                        <h5>METHANE</h5>
+                        </li>
+                        <li class="YellowText">
+                        <img src="Images/YellowDot.png" alt>
+                        <h3>0.015%</h3>
+                        <h5>HYDROGEN</h5>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div id="CallistoInfoBox" class="InfoBox" style="-moz-transition-delay: .15s;  -moz-transition-duration: 0.4s; -moz-transition-timing-function: ease;">
+			<div class="InfoBoxWrapper">
+            	<div class="AboutMoon">
+                <h1>CALLISTO</h1><p>is the third largest moon of Jupiter and has the oldest unchanged surface in the solar system. Callisto is the largest moon without any geological activity.</p>
+                </div>
+                <div class="MoonFacts">
+                </div>
+            </div>
+        </div>
+         <div id="IoInfoBox" class="InfoBox" style="-moz-transition-delay: .15s;  -moz-transition-duration: 0.4s; -moz-transition-timing-function: ease;">
+			<div class="InfoBoxWrapper">
+            	<div class="AboutMoon">
+                <h1>IO</h1><p>is the fourth-largest moon of Jupiter and has the most volcanic activity in the solar system. Io is covered completely in volcanoes with frequent eruptions.</p>
+                </div>
+                <div class="MoonFacts">
+                </div>
+            </div>
+        </div>
+         <div id="EuropaInfoBox" class="InfoBox" style="-moz-transition-delay: .15s;  -moz-transition-duration: 0.4s; -moz-transition-timing-function: ease;">
+			<div class="InfoBoxWrapper">
+            	<div class="AboutMoon">
+                <h1>EUROPA</h1><p>is a moon of Jupiter and has the smoothest surface in the solar system. Due to the tidal heating from Jupiter there is an ocean that exists under its icy crust.</p>
+                </div>
+                <div class="MoonFacts">
+                </div>
+            </div>
+        </div>
+         <div id="TritonInfoBox" class="InfoBox" style="-moz-transition-delay: .15s;  -moz-transition-duration: 0.4s; -moz-transition-timing-function: ease; display: none;">
+			<div class="InfoBoxWrapper">
+            	<div class="AboutMoon">
+                <h1>TRITON</h1><p>is the largest moon of Neptune and the only large moon with a retrograde motion. Triton is volcanic active moon erupting liquid water and ammonia.</p>
+                </div>
+                <div class="MoonFacts">
+                </div>
+            </div>
+        </div>
+         <div id="EnceladusInfoBox" class="InfoBox" style="-moz-transition-delay: .15s;  -moz-transition-duration: 0.4s; -moz-transition-timing-function: ease; display: none;">
+			<div class="InfoBoxWrapper">
+            	<div class="AboutMoon">
+                <h1>ENCELADUS</h1><p> is the sixth-largest moon of Saturn and the most reflective moon in the solar system. Enceladus is the source of Saturn’s E-ring is created by its geyser.</p>
+                </div>
+                <div class="MoonFacts">
+                </div>
+            </div>
+        </div>
+         <div id="MirandaInfoBox" class="InfoBox" style="-moz-transition-delay: .15s;  -moz-transition-duration: 0.4s; -moz-transition-timing-function: ease; display: none;">
+			<div class="InfoBoxWrapper">
+            	<div class="AboutMoon">
+                <h1>MIRANDA</h1><p>is a moon of Uranus and is the ugliest moon in our solar system. Miranda has some of the greatest varied landscapes.</p>
+                </div>
+                <div class="MoonFacts">
+                </div>
+            </div>
+        </div>
+         <div id="NereidInfoBox" class="InfoBox" style="-moz-transition-delay: .15s;  -moz-transition-duration: 0.4s; -moz-transition-timing-function: ease; display: none;">
+			<div class="InfoBoxWrapper">
+            	<div class="AboutMoon">
+                <h1>NEREID</h1><p>is the third largest moon of Neptune and has the most eccentric orbit in our solar system.</p>
+                </div>
+                <div class="MoonFacts">
+                </div>
+            </div>
+        </div>
+         <div id="MimasInfoBox" class="InfoBox" style="-moz-transition-duration: 0.5s; -moz-transition-timing-function: ease;display: none;">
+			<div class="InfoBoxWrapper">
+            	<div class="AboutMoon">
+                <h1>MIMAS</h1><p>is a moon of Saturn and is the smallest moon that is round shaped due to self-gravitation. Mimas resemblance the Death Star with its large crater.</p> 
+                </div>
+                <div class="MoonFacts">
+                </div>
+            </div>
+        </div>
+    </div>
+	
+</body>
+</html>
